@@ -1,9 +1,22 @@
 
+picture,
+img {
+    display: block;
+}
+
 .hero {
     position: relative;
     height: 502px;
     background-color: #FFB8CA;
     overflow-x: hidden;
+
+    @media screen and (min-width: 768px) {
+        height: 416px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 664px;
+    }
 
     &::after {
         content: "";
@@ -27,6 +40,9 @@
             }
 
         @media screen and (min-width: 768px) {
+            width: 143px;
+            height: 336px;
+            right: 303px;
             background-image: url(/images/01hero_header/hero-tablet.png);
 
             @media (min-device-pixel-ratio: 2),
@@ -40,6 +56,9 @@
 
           @media screen and (min-width: 1200px) {
             background-image: url(/images/01hero_header/hero-pc.png);
+            width: 236px;
+            height: 557px;
+            right: 329px;
 
             @media (min-device-pixel-ratio: 2),
                 (-webkit-min-device-pixel-ratio: 2),
@@ -76,6 +95,10 @@
 
 
         @media screen and (min-width: 768px) {
+            width: 335px;
+            height: 335px;
+            right: 185px;
+            bottom: 43px;
             background-image: url(/images/01hero_header/ellipse-tablet.png);
 
             @media (min-device-pixel-ratio: 2),
@@ -88,6 +111,10 @@
         }
 
         @media screen and (min-width: 1200px) {
+            width: 534px;
+            height: 534px;
+            right: 149px;
+            bottom: 76px;
             background-image: url(/images/01hero_header/ellipse-pc.png);
             @media (min-device-pixel-ratio: 2),
                 (-webkit-min-device-pixel-ratio: 2),
@@ -104,11 +131,13 @@
 
 
 .hero-title {
+    font-family: 'Titan One';
     flex-direction: column;
     position: relative;
-    margin: 0;
+    margin-top: 136px;
     max-width: 218px;
-    padding-top: 136px;
+    
+
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -116,7 +145,21 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #fff;
+
     z-index: 1;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 20px;
+        font-size: 22px;
+        line-height: 1.14;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+        line-height: 1.16;
+        margin-top: 60px;
+        max-width: 280px;
+    }
 
 }
 .hero-title__size {
@@ -128,30 +171,56 @@
     text-transform: uppercase;
     color: #D41443;
 
+    @media screen and (min-width: 768px) {
+        font-size: 34px;
+        line-height: 90.5%;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 90.5%;
+    }
 }
 
 .hero__btn-list {
     display: flex;
     margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 24px;
+
+        }
 }
 
 .hero-btn__item{
     z-index: 1;
     &:not(:last-child) {
         margin-right: 8px;
+        
+        @media screen and (min-width: 1200px) {
+            margin-right: 12px;
+        }
     }
 }
 
 .hero__btn-link {
     display: inline-block;
-    padding: 7px 13px;
+    padding: 6px 14px;
     border-radius: 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
-    line-height: 10px;
+    line-height: 1.13;
     color: #fff;
     background-color: #D41443;
+    transition-duration: 500ms;
+
+    @media screen and (min-width: 1200px) {
+        padding: 11px 21px;
+        font-size: 14px;
+        line-height: 1.13;
+    }
 
     &:hover,
     &:focus {
@@ -162,7 +231,7 @@
 
 .hero__btn-link--second {
     display: inline-block;
-    padding: 7px 13px;
+    padding: 6px 14px;
     border-radius: 20px;
     font-style: normal;
     font-weight: 400;
@@ -170,10 +239,263 @@
     line-height: 10px;
     background-color: #fff;
     color: #D41443;
+    transition-duration: 500ms;
+
+    @media screen and (min-width: 1200px) {
+        padding: 11px 21px;
+        font-size: 14px;
+        line-height: 18px;
+
+    }
 
     &:hover,
     &:focus {
         background-color: #ECEBEB;
         color: #D41443;
     }
+}
+
+
+
+
+.hero-box {
+    margin-top: 61px;
+    margin-left: 162px;
+    max-width: 114px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 106px;
+        margin-left: 230px;
+        max-width: 200px;
+
+    }
+}
+
+.hero-box__text {
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 150%;
+    z-index: 1;
+
+    color: #FFFFFF;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+}
+
+.hero-box__btn {
+    margin-top: 7px;
+    width: 18px;
+    height: 18px;
+    border: 0;
+    border-radius: 50%;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 19px;
+        width: 26px;
+        height: 26px;
+
+    }
+}
+
+.hero-box__svg {
+    fill: #D41443;
+    margin-bottom: 3px;
+}
+
+.hero-thumb__left {
+    position: absolute;
+    bottom: 10px;
+    left: 32px;
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+    @media screen and (min-width: 1200px) {
+        bottom: 58px;
+        left: 16px;
+    }
+}
+
+
+.hero-thumb__right {
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+
+
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+    @media screen and (min-width: 1200px) {
+        right: 16px;
+    }
+}
+
+
+.numbers-box {
+    position: absolute;
+    top: 93px;
+    right: 32px;
+    width: 40px;
+
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+    @media screen and (min-width: 1200px) {
+        right: 51px;
+        top: 152px;
+     
+    }
+
+}
+
+.numbers-box__number {
+    position: absolute;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443; 
+    z-index: 1;
+
+    @media screen and (min-width: 1200px) {
+            font-size: 46px;
+            line-height: 53px;
+        }
+ 
+}
+
+
+.numbers-box__radius {
+    position: absolute;
+    top: -3px;
+    right: -1px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    @media screen and (min-width: 1200px) {
+            width: 30px;
+            height: 30px;
+            right: -34px;
+        }
+
+}
+
+.numbers-box__text {
+    position: absolute;
+    bottom: -38px;
+    right: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;;
+    
+    color: #FFFFFF;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 18px;
+        bottom: -62px;
+        right: -11px
+
+    }
+}
+
+
+
+.numbers-box--second {
+    position: absolute;
+    top: 156px;
+    right: 32px;
+    width: 40px;
+
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+    @media screen and (min-width: 1200px) {
+        right: 51px;
+        top: 244px;
+    }
+}
+
+.numbers-box__number--second {
+        position: absolute;
+            font-family: 'Titan One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 1.14;
+        
+            text-align: right;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #D41443;
+            z-index: 1;
+            @media screen and (min-width: 1200px) {
+                    font-size: 46px;
+                    line-height: 53px;
+                }
+
+}
+
+.numbers-box__text--second {
+        position: absolute;
+            bottom: -38px;
+            right: 1px;
+            width: 45px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 1.25;
+            ;
+        
+            color: #FFFFFF;
+        
+            @media screen and (min-width: 1200px) {
+                width: 75px;
+                font-size: 14px;
+                line-height: 18px;
+                bottom: -62px;
+                right: -21px
+            }
+
+}
+
+.numbers-box__radius--second {
+        position: absolute;
+            top: -3px;
+            right: -1px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+        
+            @media screen and (min-width: 1200px) {
+                width: 30px;
+                height: 30px;
+                right: -34px;
+            }
+
 }

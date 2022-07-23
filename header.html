@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Хэдэр</Header></title>
+    <title>Хэдэр</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,15 +23,17 @@
                         <use class="logo__svg-use" href="./images/01hero_header/symbol-defs.svg#icon-logo"></use>
                     </svg>
                 </a>
-                
-                
+                           
 
                 <button class="header__btn-open" data-menu-button type="button">
-                    <svg class="header__btn-switcher--open" width="14" height="14" aria-label="Переключатель мобильного меню">
+                    <svg class="header__btn-switcher--open" aria-label="Переключатель мобильного меню">
                         <use href="./images/01hero_header/symbol-defs.svg#icon-burger"></use>
                     </svg>
                 </button>
-                <button class="header__btn-outside" type="button">Buy now</button>
+                
+                <button class="header__btn-outside" type="button"><span class="header__btn-text">Buy now</span><svg class="header__btn-svg" width="5" height="8">
+                    <use href="./images/01hero_header/symbol-defs.svg#icon-arrow"></use>
+                </svg></button>
             </div>
            
 
@@ -36,7 +41,7 @@
                 
                             <button class="header__btn-close" data-menu-button type="button">
                                 <svg class="header__btn-switcher--close" width="14" height="14" aria-label="Переключатель мобильного меню">
-                                    <use class="header__btn-switcher--close" href="./images/01hero_header/symbol-defs.svg#icon-close"></use>
+                                    <use href="./images/01hero_header/symbol-defs.svg#icon-close"></use>
                                 </svg>
                             </button>
 
@@ -65,6 +70,50 @@
             <li class="hero-btn__item"><a class="hero__btn-link" href="#">Products</a></li>
             <li class="hero-btn__item"><a class="hero__btn-link--second" href="#">How it’s made?</a></li>
         </ul>
+        <div class="hero-box">
+            <p class="hero-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <button class="hero-box__btn">
+                    <svg class="hero-box__svg" width="6" height="6">
+                        <use href="./images/01hero_header/symbol-defs.svg#icon-arrow-right2"></use>
+                    </svg>
+            </button>
+        </div> 
+
+        <div class="hero-thumb__left">
+            <picture>
+                <source srcset="./images/01hero_header/milk.png 1x, ./images/01hero_header/milk@2x.png 2x "
+                    media="(min-width: 1200px)" />
+            
+                <source srcset="./images/01hero_header/milk-tablet.png 1x, ./images/01hero_header/milk-tablet@2x.png 2x "
+                    media="(min-width: 768px)" />
+                <img src="./images/01hero_header/milk.png" alt="кувшин с молоком">
+            </picture>
+        </div>
+
+            <div class="hero-thumb__right">
+                <picture>
+                    <source srcset="./images/01hero_header/girl.png 1x, ./images/01hero_header/girl@2x.png 2x "
+                        media="(min-width: 1200px)" />
+            
+                    <source srcset="./images/01hero_header/girl-tablet.png 1x, ./images/01hero_header/girl-tablet@2x.png 2x "
+                        media="(min-width: 768px)" />
+                    <img src="./images/01hero_header/girl.png" alt="кувшин с молоком">
+                </picture>
+            </div>
+
+        <div class="numbers-box">
+            <span class="numbers-box__number">16</span>
+            <span class="numbers-box__text">cafes</span>
+            <span class="numbers-box__radius"></span>
+        </div>
+
+        <div class="numbers-box--second">
+            <span class="numbers-box__number--second">23</span>
+            <span class="numbers-box__text--second">food trucks</span>
+            <span class="numbers-box__radius--second"></span>
+        </div>
+
+  
     </section>
     <script src="./js/mobile-menu.js"></script>
 </body>
