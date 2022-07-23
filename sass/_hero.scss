@@ -1,0 +1,179 @@
+
+.hero {
+    position: relative;
+    height: 502px;
+    background-color: #FFB8CA;
+    overflow-x: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 28px;
+        bottom: 0;
+        width: 171px;
+        height: 409px;
+        background-image: url(/images/01hero_header/hero-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media screen and (max-width: 767px) {
+        
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(/images/01hero_header/hero-mobile@2x.png);
+                }
+            }
+
+        @media screen and (min-width: 768px) {
+            background-image: url(/images/01hero_header/hero-tablet.png);
+
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(/images/01hero_header/hero-tablet@2x.png);
+                }
+
+        }
+
+          @media screen and (min-width: 1200px) {
+            background-image: url(/images/01hero_header/hero-pc.png);
+
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(/images/01hero_header/hero-pc@2x.png);
+                }
+         }           
+    }
+
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: -60px;
+        bottom: 75px;
+        width: 345px;
+        height: 345px;
+        background-image: url(/images/01hero_header/ellipse-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+
+        @media screen and (max-width: 767px) {
+        
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(/images/01hero_header/ellipse-mobile@2x.png);
+                }
+            }
+
+
+        @media screen and (min-width: 768px) {
+            background-image: url(/images/01hero_header/ellipse-tablet.png);
+
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(/images/01hero_header/ellipse-tablet@2x.png);
+                }
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            background-image: url(/images/01hero_header/ellipse-pc.png);
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(/images/01hero_header/ellipse-pc@2x.png);
+                }
+
+        }
+
+
+}
+}
+
+
+.hero-title {
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    max-width: 218px;
+    padding-top: 136px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 1;
+
+}
+.hero-title__size {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 96.5%;
+    text-transform: uppercase;
+    color: #D41443;
+
+}
+
+.hero__btn-list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.hero-btn__item{
+    z-index: 1;
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.hero__btn-link {
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: #fff;
+    background-color: #D41443;
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+        color: #D41443;
+    }
+}
+
+.hero__btn-link--second {
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    background-color: #fff;
+    color: #D41443;
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+        color: #D41443;
+    }
+}

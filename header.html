@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хэдэр</Header></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/main.min.css">
+    
+</head>
+<body>
+    <section class="hero section">
+        <header class="header">
+            <div class="header-box">
+                <a class="logo" href="./">
+                    <svg class="logo__svg">
+                        <use class="logo__svg-use" href="./images/01hero_header/symbol-defs.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                
+                
+
+                <button class="header__btn-open" data-menu-button type="button">
+                    <svg class="header__btn-switcher--open" width="14" height="14" aria-label="Переключатель мобильного меню">
+                        <use href="./images/01hero_header/symbol-defs.svg#icon-burger"></use>
+                    </svg>
+                </button>
+                <button class="header__btn-outside" type="button">Buy now</button>
+            </div>
+           
+
+            <div class="menu-mobil is-open" data-menu>
+                
+                            <button class="header__btn-close" data-menu-button type="button">
+                                <svg class="header__btn-switcher--close" width="14" height="14" aria-label="Переключатель мобильного меню">
+                                    <use class="header__btn-switcher--close" href="./images/01hero_header/symbol-defs.svg#icon-close"></use>
+                                </svg>
+                            </button>
+
+                <button class="header__btn" type="button"><span class="header__btn-text">Buy now</span>
+                    <svg class="header__btn-svg" width="5" height="8">
+                        <use href="./images/01hero_header/symbol-defs.svg#icon-arrow"></use>
+                    </svg>
+                </button>
+                <ul class="menu-mobil__list">
+                    <li class="menu-mobil__item"><a class="header__mobil-link" href="">Home</a></li>
+                    <li class="menu-mobil__item"><a class="header__mobil-link" href="">About us</a></li>
+                    <li class="menu-mobil__item"><a class="header__mobil-link" href="">How it’s made?</a></li>
+                    <li class="menu-mobil__item"><a class="header__mobil-link" href="">Our products</a></li>
+                    <li class="menu-mobil__item"><a class="header__mobil-link" href="">Contact</a></li>
+                </ul>
+            </div>
+            
+
+
+        </header>
+
+        <h1 class="hero-title"><span>ice cream
+        made with</span><span class="hero-title__size">passion</span>
+        </h1>
+        <ul class="hero__btn-list">
+            <li class="hero-btn__item"><a class="hero__btn-link" href="#">Products</a></li>
+            <li class="hero-btn__item"><a class="hero__btn-link--second" href="#">How it’s made?</a></li>
+        </ul>
+    </section>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+</html>
