@@ -36,6 +36,22 @@ a {
   }
 }
 
+.conteiner-header {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .conteiner-header {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner-header {
+    max-width: 1200px;
+  }
+}
+
 .header-box {
   display: flex;
   align-items: center;
@@ -142,14 +158,8 @@ a {
 
 .header__btn-switcher--open {
   stroke: #D41443;
-  width: 14px;
-  height: 14px;
-}
-@media screen and (min-width: 768px) {
-  .header__btn-switcher--open {
-    width: 20px;
-    height: 20px;
-  }
+  width: 20px;
+  height: 12px;
 }
 
 .visually-hidden {
@@ -175,7 +185,8 @@ a {
   right: 0;
   top: 0;
   height: 100vh;
-  width: 250px;
+  width: 70vw;
+  min-width: 250px;
   overflow: hidden;
   background-color: #E17992;
   transition-duration: 500ms;

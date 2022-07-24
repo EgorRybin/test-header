@@ -18,14 +18,29 @@ a {text-decoration: none;
 .section {
     padding-right: 20px;
     padding-left: 20px;
-
+  
     @media screen and (min-width: 768px) {
         padding-right: 32px;
-        padding-left: 32px;
+        padding-left: 32px; 
     }
     @media screen and (min-width: 1200px) {
         padding-right: 16px;
-        padding-left: 16px;
+        padding-left: 16px;   
+    }
+}
+
+
+.conteiner-header {
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
     }
 }
 
@@ -142,12 +157,12 @@ a {text-decoration: none;
 
 .header__btn-switcher--open {
     stroke: #D41443;
-    width: 14px;
-    height: 14px;
-    @media screen and (min-width: 768px) {
-        width: 20px;
-        height: 20px;
-    }
+    width: 20px;
+    height: 12px;
+    // @media screen and (min-width: 768px) {
+    //     width: 20px;
+    //     height: 20px;
+    // }
 }
 
 
@@ -175,7 +190,8 @@ a {text-decoration: none;
     right: 0;
     top: 0;
     height: 100vh;
-    width: 250px;
+    width: 70vw;
+    min-width: 250px;
     overflow: hidden;
 
     background-color: #E17992;
