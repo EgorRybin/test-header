@@ -128,8 +128,8 @@ a {
 .header__btn-open {
   position: absolute;
   display: block;
-  top: 25px;
-  right: 20px;
+  top: 5%;
+  right: 7%;
   border: 0;
   background-color: transparent;
   width: 14px;
@@ -138,8 +138,8 @@ a {
 @media screen and (min-width: 768px) {
   .header__btn-open {
     margin-right: 30px;
-    top: 50px;
-    right: 194px;
+    top: 12%;
+    right: 25%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -191,7 +191,7 @@ a {
 }
 
 .menu-mobil.is-open {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   max-height: 100%;
@@ -199,12 +199,6 @@ a {
   transition-duration: 500ms;
   transform: translateX(100%);
   box-shadow: -8px 0px 20px rgba(0, 0, 0, 0);
-}
-@media screen and (min-width: 768px) {
-  .menu-mobil.is-open {
-    max-height: 416px;
-    right: -1%;
-  }
 }
 @media screen and (min-width: 1200px) {
   .menu-mobil.is-open {
@@ -317,7 +311,7 @@ img {
 .hero::after {
   content: "";
   position: absolute;
-  right: 28px;
+  right: 8%;
   bottom: 0;
   width: 171px;
   height: 409px;
@@ -334,7 +328,7 @@ img {
   .hero::after {
     width: 143px;
     height: 336px;
-    right: 303px;
+    right: 39%;
     background-image: url(/images/01hero_header/hero-tablet.png);
   }
 }
@@ -348,7 +342,7 @@ img {
     background-image: url(/images/01hero_header/hero-pc.png);
     width: 236px;
     height: 557px;
-    right: 329px;
+    right: 27%;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -359,8 +353,8 @@ img {
 .hero::before {
   content: "";
   position: absolute;
-  right: -60px;
-  bottom: 75px;
+  right: -19%;
+  bottom: 16%;
   width: 345px;
   height: 345px;
   background-image: url(/images/01hero_header/ellipse-mobile.png);
@@ -376,8 +370,8 @@ img {
   .hero::before {
     width: 335px;
     height: 335px;
-    right: 185px;
-    bottom: 43px;
+    right: 24%;
+    bottom: 9%;
     background-image: url(/images/01hero_header/ellipse-tablet.png);
   }
 }
@@ -390,8 +384,8 @@ img {
   .hero::before {
     width: 534px;
     height: 534px;
-    right: 149px;
-    bottom: 76px;
+    right: 13%;
+    bottom: 12%;
     background-image: url(/images/01hero_header/ellipse-pc.png);
   }
 }
@@ -580,8 +574,8 @@ img {
 
 .hero-thumb__left {
   position: absolute;
-  bottom: 10px;
-  left: 32px;
+  bottom: 6%;
+  left: 5%;
 }
 @media screen and (max-width: 767px) {
   .hero-thumb__left {
@@ -590,15 +584,15 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero-thumb__left {
-    bottom: 58px;
-    left: 16px;
+    bottom: 8%;
+    left: 2%;
   }
 }
 
 .hero-thumb__right {
   position: absolute;
   bottom: 0;
-  right: 32px;
+  right: 4%;
 }
 @media screen and (max-width: 767px) {
   .hero-thumb__right {
@@ -607,14 +601,14 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero-thumb__right {
-    right: 16px;
+    right: 2%;
   }
 }
 
 .numbers-box {
   position: absolute;
-  top: 93px;
-  right: 32px;
+  top: 24%;
+  right: 4%;
   width: 40px;
 }
 @media screen and (max-width: 767px) {
@@ -624,8 +618,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .numbers-box {
-    right: 51px;
-    top: 152px;
+    top: 23%;
+    right: 4%;
   }
 }
 
@@ -651,7 +645,7 @@ img {
 
 .numbers-box__radius {
   position: absolute;
-  top: -3px;
+  top: -5px;
   right: -1px;
   display: block;
   width: 16px;
@@ -663,13 +657,13 @@ img {
   .numbers-box__radius {
     width: 30px;
     height: 30px;
-    right: -34px;
+    right: -78%;
   }
 }
 
 .numbers-box__text {
   position: absolute;
-  bottom: -38px;
+  bottom: -40px;
   right: 8px;
   font-style: normal;
   font-weight: 400;
@@ -681,15 +675,15 @@ img {
   .numbers-box__text {
     font-size: 14px;
     line-height: 18px;
-    bottom: -62px;
+    bottom: -71px;
     right: -11px;
   }
 }
 
 .numbers-box--second {
   position: absolute;
-  top: 156px;
-  right: 32px;
+  top: 38%;
+  right: 4%;
   width: 40px;
 }
 @media screen and (max-width: 767px) {
@@ -699,7 +693,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .numbers-box--second {
-    right: 51px;
+    right: 4%;
     top: 244px;
   }
 }
@@ -726,7 +720,7 @@ img {
 
 .numbers-box__text--second {
   position: absolute;
-  bottom: -38px;
+  bottom: -40px;
   right: 1px;
   width: 45px;
   font-style: normal;
@@ -740,14 +734,14 @@ img {
     width: 75px;
     font-size: 14px;
     line-height: 18px;
-    bottom: -62px;
+    bottom: -71px;
     right: -21px;
   }
 }
 
 .numbers-box__radius--second {
   position: absolute;
-  top: -3px;
+  top: -5px;
   right: -1px;
   display: block;
   width: 16px;
@@ -759,6 +753,6 @@ img {
   .numbers-box__radius--second {
     width: 30px;
     height: 30px;
-    right: -34px;
+    right: -78%;
   }
 }/*# sourceMappingURL=main.css.map */

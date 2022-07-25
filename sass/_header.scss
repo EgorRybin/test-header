@@ -128,20 +128,17 @@ a {text-decoration: none;
     position: absolute;
     display: block;
         
-    top: 25px;
-    right: 20px;
+    top: 5%;
+    right: 7%;
     border: 0;
     background-color: transparent;
     width: 14px;
     height: 14px;
 
-
-    
-
     @media screen and (min-width: 768px) {
         margin-right: 30px;
-        top: 50px;
-        right: 194px;        
+        top: 12%;
+        right: 25%;        
     }
 
     @media screen and (min-width: 1200px) {
@@ -201,7 +198,7 @@ a {text-decoration: none;
 }
 
 .menu-mobil.is-open {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     max-height: 100%;
@@ -211,8 +208,7 @@ a {text-decoration: none;
     box-shadow: (-8px 0px 20px rgba(0, 0, 0, 0));
 
     @media screen and (min-width: 768px) {
-        max-height: 416px;
-        right: -1%;
+
         
     }
 
