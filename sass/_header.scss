@@ -150,10 +150,6 @@ a {text-decoration: none;
     stroke: #D41443;
     width: 20px;
     height: 12px;
-    // @media screen and (min-width: 768px) {
-    //     width: 20px;
-    //     height: 20px;
-    // }
 }
 
 
@@ -264,8 +260,7 @@ a {text-decoration: none;
     color: hsl(345deg 83% 45%);
     transition-duration: 500ms;
     
-    &:hover,
-    &:focus {
+    &:hover {
         color: #D41443;
         background-color: #ECEBEB;
     }
